@@ -74,6 +74,7 @@ class ResponseModel {
      */
     public static function load($responseText, $secret, $model = null) {
         $response = json_decode($responseText, true);
+
         $resp = new self;
         if (isset($response['error_code'])) {
             $resp->error_code = $response['error_code'];
@@ -101,10 +102,12 @@ class ResponseModel {
 
         }
 
-        if (!$resp->validateChecksum($secret)) {
-            // $resp->object = null;
-            $resp->error_code = self::PARTNER_VALIDATION_FAILED;
-            $resp->message = 'Invalid checksum';
+        if (!$resp->isError()) {
+            if (!$resp->validateChecksum($secret)) {
+                // $resp->object = null;
+                $resp->error_code = self::PARTNER_VALIDATION_FAILED;
+                $resp->message = 'Invalid checksum';
+            }
         }
 
         return $resp;

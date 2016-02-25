@@ -2,9 +2,6 @@
 
 function globalConfig() {
     return array(
-        // 'create_order_url' => 'http://apimerchant.webmoney.com.vn/payment/create-order',
-        'create_order_url' => 'http://apimerchant.webmoney.prj/payment/create-order',
-        'query_order_url' => '',
         'passcode' => 'M_HASH',
         'secret_key' => 'test@webmoney',
         'order'  => array(
