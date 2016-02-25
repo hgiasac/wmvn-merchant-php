@@ -1,0 +1,2130 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"plainString"
+			],
+			[
+				"plain",
+				"plainString"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"merc",
+				"merchant"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"jso",
+				"jsonData"
+			],
+			[
+				"print",
+				"print_r()"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"PAYMENT_",
+				"PAYMENT_CONFIRM_OTP"
+			],
+			[
+				"post",
+				"postData"
+			],
+			[
+				"Payment",
+				"PaymentForm"
+			],
+			[
+				"C",
+				"Count"
+			],
+			[
+				"Modelle",
+				"Modeller	interface ¡"
+			],
+			[
+				"sel",
+				"SelectOne	*binding.Error ƒ"
+			],
+			[
+				"rel",
+				"relLen	 ν"
+			],
+			[
+				"re",
+				"relLen	int ν"
+			],
+			[
+				"Mod",
+				"Modeller	interface ¡"
+			],
+			[
+				"Mode",
+				"Modeller	interface ¡"
+			],
+			[
+				"OneTo",
+				"OneToOne	 Ɩ"
+			],
+			[
+				"l",
+				"List	[]Modeller ƒ"
+			],
+			[
+				"Modll",
+				"Modellers	interface ¡"
+			],
+			[
+				"Modell",
+				"Modellers	interface ¡"
+			],
+			[
+				"old",
+				"oldMdl	Modeller ν"
+			],
+			[
+				"di",
+				"DisableSnapshot	bool ν"
+			],
+			[
+				"modl",
+				"Modeller	interface ¡"
+			],
+			[
+				"snp",
+				"snapshots	map[string]Modellers ν"
+			],
+			[
+				"ise",
+				"isEmptyPkValue	*binding.Error ƒ"
+			],
+			[
+				"dest",
+				"destName	string ν"
+			],
+			[
+				"Model",
+				"Modeller	interface ¡"
+			],
+			[
+				"Modl",
+				"Modeller	interface ¡"
+			],
+			[
+				"ErrPk",
+				"ErrEmptyPK	*binding.Error ν"
+			],
+			[
+				"col",
+				"columns	[]string ν"
+			],
+			[
+				"ex",
+				"ExtractFieldMap	[]string, []interface{} ƒ"
+			],
+			[
+				"m",
+				"model	Modeller ν"
+			],
+			[
+				"ar",
+				"args	[]interface{} ν"
+			],
+			[
+				"One",
+				"OneToMany	 Ɩ"
+			],
+			[
+				"sql",
+				"SQLModel	struct ʈ"
+			],
+			[
+				"geto",
+				"getOrder	string ƒ"
+			],
+			[
+				"get",
+				"getOffset	string ƒ"
+			],
+			[
+				"or",
+				"getOrder	string ƒ"
+			],
+			[
+				"a",
+				"alias	string ν"
+			],
+			[
+				"cl",
+				"columns	[]string ν"
+			],
+			[
+				"joi",
+				"Joins	[]joinBuilder ν"
+			],
+			[
+				"join",
+				"joinType	string ν"
+			],
+			[
+				"spr",
+				"Sprintf	string ƒ"
+			],
+			[
+				"pag",
+				"PageNumber	int64 ƒ"
+			],
+			[
+				"to",
+				"totalRows	int64 ν"
+			],
+			[
+				"t",
+				"totalRows	int64 ν"
+			],
+			[
+				"n",
+				"PageNum	int64 ν"
+			],
+			[
+				"Total",
+				"TotalRows	int64 ν"
+			],
+			[
+				"qu",
+				"selectQuery	[]Modeller, *binding.Error ƒ"
+			],
+			[
+				"ta",
+				"totalRows	int64 ν"
+			],
+			[
+				"page",
+				"pageNumber	int64 ν"
+			],
+			[
+				"o",
+				"Order	string ν"
+			],
+			[
+				"fom",
+				"FormJSON	 Ɩ"
+			],
+			[
+				"conte",
+				"ContentTypeCheckerMiddleware	struct ʈ"
+			],
+			[
+				"con",
+				"Controller	IController ƒ"
+			],
+			[
+				"ac",
+				"act1	AcceptContentType ν"
+			],
+			[
+				"JSON",
+				"JSONResponseWriter	struct ʈ"
+			],
+			[
+				"mid",
+				"ProductionMiddlewares	Chain ƒ"
+			],
+			[
+				"de",
+				"DevMiddlewares	Chain ƒ"
+			],
+			[
+				"co",
+				"Config	*Config ν"
+			],
+			[
+				"lo",
+				"Logger	log.Logger ν"
+			],
+			[
+				"se",
+				"ServeFiles	 ƒ"
+			],
+			[
+				"q",
+				"QueryRow	*pgx.Row ƒ"
+			],
+			[
+				"SPRINT",
+				"Sprintf	string ƒ"
+			],
+			[
+				"sessio",
+				"sessionPath	 Ɩ"
+			],
+			[
+				"secu",
+				"secureSecretLength	 Ɩ"
+			],
+			[
+				"c",
+				"Context	*Context ƒ"
+			],
+			[
+				"d",
+				"DisableCSRF	bool ν"
+			],
+			[
+				"cs",
+				"CSRFToken	string ƒ"
+			],
+			[
+				"csr",
+				"CSRFFailureHandler	http.Handler ν"
+			],
+			[
+				"getc",
+				"GetController	web.IController ƒ"
+			],
+			[
+				"han",
+				"Handler	interface ¡"
+			],
+			[
+				"newcook",
+				"NewCookieStore	*sessions.CookieStore ƒ"
+			],
+			[
+				"log",
+				"Logout	error ƒ"
+			],
+			[
+				"Erros",
+				"Errors	map[string][]Error ʈ"
+			],
+			[
+				"er",
+				"Errors	binding.Errors ν"
+			],
+			[
+				"const",
+				"constructors	...Constructor ν"
+			],
+			[
+				"ERr",
+				"Errors	binding.Errors ν"
+			],
+			[
+				"te",
+				"Template	*template.Template ν"
+			],
+			[
+				"err",
+				"ErrorKey	string ƒ"
+			],
+			[
+				"Erro",
+				"Errors	*binding.Errors ν"
+			],
+			[
+				"has",
+				"HasError	bool ƒ"
+			],
+			[
+				"templ",
+				"TemplatePath	string ν"
+			],
+			[
+				"i",
+				"ID	int64 ν"
+			],
+			[
+				"user",
+				"userSession	*UserSession ν"
+			],
+			[
+				"newse",
+				"NewUserSession	*UserSession ƒ"
+			],
+			[
+				"sess",
+				"authSessionName	 Ɩ"
+			],
+			[
+				"autse",
+				"AuthSession	struct ʈ"
+			],
+			[
+				"is",
+				"IsRemember	bool ν"
+			],
+			[
+				"ses",
+				"session	*sessions.Session ν"
+			],
+			[
+				"s",
+				"Store	sessions.Store ν"
+			],
+			[
+				"new",
+				"NewAuthSession	*AuthSession ƒ"
+			],
+			[
+				"ctr",
+				"ctrlPath	string ν"
+			],
+			[
+				"rou",
+				"RouteMap	map[string]*web.Action ν"
+			],
+			[
+				"me",
+				"Method	string ν"
+			],
+			[
+				"F",
+				"FullName	string ν"
+			],
+			[
+				"Fie",
+				"FieldMap	map[string]interface{} ʈ"
+			],
+			[
+				"fiel",
+				"FieldMap	map[string]interface{} ʈ"
+			],
+			[
+				"r",
+				"RouteMap	map[string]*web.Route ν"
+			],
+			[
+				"getla",
+				"GetLayoutName	string ƒ"
+			],
+			[
+				"g",
+				"GenerateRandomKey	[]byte ƒ"
+			],
+			[
+				"Con",
+				"Context	*Context ν"
+			],
+			[
+				"gette",
+				"GetTemplatePath	string ƒ"
+			],
+			[
+				"read",
+				"ReadDir	[]os.FileInfo, error ƒ"
+			],
+			[
+				"layu",
+				"LayoutPath	string ν"
+			],
+			[
+				"gettem",
+				"GetTemplateParts	[]string ƒ"
+			],
+			[
+				"defaultlayou",
+				"defaultLayoutPath	 Ɩ"
+			],
+			[
+				"App",
+				"AppConfig	struct ʈ"
+			],
+			[
+				"getpa",
+				"GetPageTitle	string ƒ"
+			],
+			[
+				"G",
+				"GetActionURI	string ƒ"
+			],
+			[
+				"rout",
+				"RouteMap	map[string]*Route ν"
+			],
+			[
+				"Sprint",
+				"Sprintf	string ƒ"
+			],
+			[
+				"na",
+				"Name	string ν"
+			],
+			[
+				"e",
+				"Error	 ƒ"
+			],
+			[
+				"temp",
+				"TemplatePath	string ν"
+			],
+			[
+				"cont",
+				"GetController	*Controller ƒ"
+			],
+			[
+				"ge",
+				"GetApplication	*Application ƒ"
+			],
+			[
+				"action",
+				"actionPath	string ν"
+			],
+			[
+				"ctrl",
+				"ctrlPath	string ν"
+			],
+			[
+				"defaul",
+				"defaultTemplatePath	 Ɩ"
+			],
+			[
+				"Write",
+				"ResponseWriter	interface ¡"
+			],
+			[
+				"IA",
+				"IAuthSetting	interface ¡"
+			],
+			[
+				"Authse",
+				"AuthSetting	struct ʈ"
+			],
+			[
+				"Mer",
+				"MergeArrayStr	[]string ƒ"
+			],
+			[
+				"handl",
+				"HandleController	 ƒ"
+			]
+		]
+	},
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 234.0,
+		"last_filter": "pa rem",
+		"selected_items":
+		[
+			[
+				"pa rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"pa in",
+				"Package Control: Install Package"
+			],
+			[
+				"merge",
+				"Sublimerge"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"git mer",
+				"Git: Merge Branch"
+			],
+			[
+				"git ",
+				"Git: Push"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git",
+				"Git: Commit"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"pa i",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"ini",
+				"Set Syntax: INI"
+			],
+			[
+				"ngin",
+				"Set Syntax: nginx"
+			],
+			[
+				"pain",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"Pretty JSON: Validate"
+			],
+			[
+				"pa dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"ass",
+				"Snippet: Golang type assertion values"
+			],
+			[
+				"assert",
+				"Snippet: Golang type assertion values"
+			],
+			[
+				"JSON",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"pa remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"jsonl",
+				"Pretty JSON: Validate"
+			],
+			[
+				"pa remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"pa en",
+				"Package Control: Enable Package"
+			],
+			[
+				"pa ",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"type",
+				"Snippet: Golang type assertion values"
+			],
+			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"sassbe",
+				"SassBeautify"
+			],
+			[
+				"css",
+				"Run CSScomb"
+			],
+			[
+				"cssco",
+				"Run CSScomb"
+			],
+			[
+				"cssc",
+				"Run CSScomb"
+			],
+			[
+				"css com",
+				"Run CSScomb"
+			],
+			[
+				"sass",
+				"SassBeautify"
+			],
+			[
+				"pa lis",
+				"Package Control: List Packages"
+			],
+			[
+				"pa ins",
+				"Package Control: Install Package"
+			],
+			[
+				"sho",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"show",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"pa re",
+				"Package Control: Remove Package"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"pa di",
+				"Package Control: Disable Package"
+			],
+			[
+				"linter",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"js",
+				"JSHint: Set Plugin Options"
+			],
+			[
+				"jshin",
+				"JSHint: Set Plugin Options"
+			],
+			[
+				"csscom",
+				"Run CSScomb"
+			],
+			[
+				"commen",
+				"Toggle Comment"
+			],
+			[
+				"comment",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"CSSC",
+				"Run CSScomb"
+			],
+			[
+				"djang",
+				"Set Syntax: Python Django"
+			],
+			[
+				"glue",
+				"Glue - Launch"
+			],
+			[
+				"pa d",
+				"Package Control: Disable Package"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"pa",
+				"Package Control: Disable Package"
+			],
+			[
+				"",
+				"Anaconda: Show error list"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				" pa",
+				"Package Control: Install Package"
+			],
+			[
+				"jshint",
+				"JSHint"
+			],
+			[
+				"jshi",
+				"JSHint"
+			],
+			[
+				"jsh",
+				"JSHint"
+			],
+			[
+				"pa remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"pa list",
+				"Package Control: List Packages"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"pytho",
+				"Set Syntax: Python Django"
+			],
+			[
+				"djan",
+				"Set Syntax: Python Django"
+			],
+			[
+				"snip",
+				"Snippet: block"
+			],
+			[
+				"git di",
+				"Git: Diff Current File"
+			],
+			[
+				"ftp",
+				"SFTP: Cancel Upload"
+			],
+			[
+				"prefix",
+				"Autoprefix CSS"
+			],
+			[
+				"topco",
+				"Snippet: Top Comment"
+			],
+			[
+				"respon",
+				"Snippet: All Responvive Media"
+			],
+			[
+				"top com",
+				"Snippet: Top Comment"
+			],
+			[
+				"ngnix",
+				"Set Syntax: nginx"
+			],
+			[
+				"ngninx",
+				"Set Syntax: nginx"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"nginx",
+				"Set Syntax: nginx"
+			],
+			[
+				"svn cle",
+				"SVN: Cleanup"
+			],
+			[
+				"Package Control: li",
+				"Package Control: List Packages"
+			],
+			[
+				"top",
+				"Snippet: Top Comment"
+			],
+			[
+				"myde",
+				"Snippet: My Custom PHP Debug Code"
+			],
+			[
+				"tidy",
+				"TidyHTML"
+			],
+			[
+				"show er",
+				"Anaconda: Show error list"
+			],
+			[
+				"show ",
+				"Anaconda: Show error list"
+			],
+			[
+				"showa ",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"anaco",
+				"Anaconda: Show error list"
+			],
+			[
+				"go to",
+				"Goto Documentation"
+			],
+			[
+				"linter	 ",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"error",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"liinter",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"beaut",
+				"Javascript Beautify"
+			],
+			[
+				"formatj",
+				"Format: Javascript"
+			],
+			[
+				"goto",
+				"Goto Documentation"
+			],
+			[
+				"jshinr",
+				"JSHint: Clear Annotations"
+			],
+			[
+				"doc",
+				"Goto Documentation"
+			],
+			[
+				"jshinh",
+				"JSHint: Set `node` Path"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				"goto d",
+				"Goto Documentation"
+			],
+			[
+				"jav	",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"ph",
+				"Set Syntax: PHP"
+			],
+			[
+				"ftp ",
+				"SFTP: Show Panel"
+			],
+			[
+				"ja",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syntax sq",
+				"Set Syntax: SQL"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sftp",
+				"SFTP: Cancel Upload"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"repo",
+				"Package Control: Add Repository"
+			],
+			[
+				"re",
+				"Package Control: Add Repository"
+			],
+			[
+				"git:comm",
+				"Git: Commit history"
+			],
+			[
+				"git:his",
+				"Git: Commit history"
+			],
+			[
+				"git:c",
+				"Git: Commit"
+			],
+			[
+				"git:",
+				"Git: Commit"
+			],
+			[
+				"git:com",
+				"Git: Commit"
+			],
+			[
+				"git:stat",
+				"Git: Status"
+			],
+			[
+				"git:push",
+				"Git: Push"
+			],
+			[
+				"git:puh",
+				"Git: Push"
+			],
+			[
+				"gitp",
+				"Git: Push"
+			],
+			[
+				"svn",
+				"TortoiseSVN: Commit"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 472.0
+	},
+	"console":
+	{
+		"height": 160.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"print $PATH",
+			"echo $PATH",
+			"clear",
+			"linter",
+			"jshint",
+			"sublimelinter",
+			"php -l",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"https://github.com/SublimeText/CTags",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/data/projects/php/wmm-sample/WMMerchant/models/CreateOrderRequest.php",
+		"/home/tongeek/.config/sublime-text-3/Packages/User/phpfmt.sublime-settings",
+		"/data/projects/php/wmm-sample/WMMerchant/Service.php",
+		"/data/projects/php/wmm-sample/sample/create-order.php",
+		"/data/projects/php/wmm-sample/sample/inc/Controller.php",
+		"/data/projects/php/wmm-sample/sample/controllers/IndexController.php",
+		"/data/projects/php/wmm-sample/WMMerchant/base/Curl.php",
+		"/data/projects/php/wmm-sample/WMMerchant/base/Security.php",
+		"/data/projects/php/merchant-webmoney/common/config/params-local.php",
+		"/data/projects/php/merchant-webmoney/api/components/ResponseError.php",
+		"/data/projects/php/merchant-webmoney/api/components/ResponseModel.php",
+		"/data/projects/php/merchant-webmoney/common/wmservice/models/ResponseHandler.php",
+		"/data/projects/php/merchant-webmoney/api/models/QueryOrderResponse.php",
+		"/data/projects/php/merchant-webmoney/api/components/RequestModel.php",
+		"/data/projects/php/merchant-webmoney/common/models/Merchant.php",
+		"/data/projects/php/merchant-sample/models/OrderRequest.php",
+		"/data/projects/php/merchant-sample/inc/Model.php",
+		"/data/projects/php/merchant-sample/controllers/CreateOrderController.php",
+		"/data/projects/php/merchant-sample/inc/WMMerchantService.php",
+		"/data/projects/php/merchant-sample/inc/Controller.php",
+		"/data/projects/php/merchant-sample/config.php",
+		"/data/projects/nexx/net/.net-webmoney/WM.API.Web/Controllers/WebMoneyVNController.cs",
+		"/data/projects/nexx/net/.net-webmoney/WM.API.Web/Web.Debug.config",
+		"/data/projects/nexx/net/.net-webmoney/WM.API.Web/NLog.config",
+		"/data/projects/php/merchant-webmoney/common/models/MerchantLog.php",
+		"/data/projects/php/merchant-webmoney/common/wmservice/models/ConfirmOTPRequest.php",
+		"/data/projects/php/merchant-webmoney/frontend/controllers/PaymentController.php",
+		"/data/projects/php/merchant-webmoney/common/helpers/SecurityHelper.php",
+		"/home/tongeek/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/tongeek/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/data/projects/php/merchant-webmoney/frontend/components/FrontendController.php",
+		"/data/projects/php/merchant-webmoney/backend/views/merchant-sandbox/index.php",
+		"/data/projects/php/merchant-webmoney/backend/views/merchant-log/index.php",
+		"/data/projects/php/merchant-webmoney/frontend/views/payment/invalid.php",
+		"/data/projects/php/merchant-webmoney/common/wmservice/WMService.php",
+		"/data/projects/php/merchant-webmoney/common/wmservice/models/MerchantResponse.php",
+		"/data/projects/php/merchant-webmoney/frontend/views/payment/_form.php",
+		"/data/projects/php/merchant-webmoney/static/frontend/css/main.css",
+		"/data/projects/php/merchant-webmoney/common/forms/PaymentForm.php",
+		"/etc/php56/php.ini",
+		"/etc/php/php.ini",
+		"/etc/nginx/sites-available/php.conf",
+		"/etc/nginx/nginx.conf",
+		"/data/projects/php/merchant-webmoney/.gitignore",
+		"/data/projects/nexx/net/.net-webmoney/WM.Models/Internal/BaseTransfer.cs",
+		"/etc/php/php-fpm.conf",
+		"/data/projects/php/index.html",
+		"/data/projects/php/index.php",
+		"/etc/php/php-fpm.d/www.conf",
+		"/var/log/nginx/access.log",
+		"/etc/php/php.in",
+		"/home/tongeek/dependencies",
+		"/home/tongeek/Missing",
+		"/data/src/atom-editor/PKGBUILD",
+		"/data/src/atom-editor/atom.install",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/oauth2/google.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/web/api/json/object.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/web/app.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/web/auth.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/web/config.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/web/content_type_checker.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/web/context.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/web/controller.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/web/middleware.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/web/model.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/web/recover.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/web/session.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/web/template.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/web_test/main.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/command/addsetting.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/command/resetrole.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/config/config.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/config/config_test.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/model/address.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/model/reset_password.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/model/setting.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/model/setting_test.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/model/user.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/model/user_activity_log.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/model/user_oauth2_access.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/model/user_oauth2_provider_accesstoken.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/model/user_oauth2_provider_application.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/model/user_oauth2_provider_grant.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/model/user_oauth2_provider_refreshtoken.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/model/user_role.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/model/user_role_test.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/web/admin/admin.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/web/admin/route.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/web/route.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/web/server.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/account/web/site/route.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/binding/binding.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/binding/fieldmap.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/binding/validator.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/db/builder.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/db/config.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/db/db.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/db/db_test.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/db/error.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/db/helper.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/db/helper_test.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/db/interfaces.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/db/model.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/db/test_helper.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/oauth2/demo/fb.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/oauth2/facebook.go",
+		"/data/projects/go/src/bitbucket.org/tongeek/v2go/web/chain.go",
+		"/home/tongeek/.config/sublime-text-3/Packages/User/C#.sublime-settings",
+		"/data/test.cs",
+		"/home/tongeek/.config/sublime-text-3/Packages/GoSublime/CHANGELOG.md",
+		"/data/projects/go/src/eaterin/v2/web_test/static/foundation-6/index.html",
+		"/data/projects/go/src/eaterin/v2/file.go",
+		"/data/projects/go/src/eaterin/v2/down.txt",
+		"/data/projects/go/src/eaterin/v2/binding/fieldmap.go",
+		"/data/projects/go/src/eaterin/v2/web/content_type_checker.go",
+		"/data/projects/go/src/eaterin/v2/web/api/json/content_type_checker.go",
+		"/data/projects/go/src/eaterin/v2/example_slice.go",
+		"/data/projects/go/src/eaterin/v2/st.go",
+		"/usr/share/themes/Adwaita/gtk-2.0/gtkrc",
+		"/data/projects/go/src/eaterin/v2/test.go",
+		"/data/projects/go/src/eaterin/gn.go",
+		"/data/projects/go/src/eaterin/v2/web_test/main.go",
+		"/data/projects/go/src/eaterin/v2/web/security.go",
+		"/data/projects/go/src/eaterin/v2/db/db.go",
+		"/data/projects/go/src/eaterin/v2/db/interfaces.go",
+		"/data/projects/go/src/eaterin/v2/util/var.go",
+		"/data/projects/go/src/eaterin/v2/db/error.go",
+		"/data/projects/go/src/eaterin/v2/db/pagination.go"
+	],
+	"find":
+	{
+		"height": 42.0
+	},
+	"find_in_files":
+	{
+		"height": 123.0,
+		"where_history":
+		[
+			"/data/projects/php/merchant-webmoney",
+			"/data/projects/php/merchant-webmoney/api/models",
+			"/data/projects/go/src/bitbucket.org/tongeek/v2go",
+			"/data/projects/go/src/eaterin/v2/web",
+			"/data/projects/go/src/eaterin/v2/log",
+			"/data/projects/go/src/eaterin/v2/web",
+			"/data/projects/python/eatenv/eaterin/eaterinjs/app/templates",
+			"/data/projects/python/eatenv/eaterin/eaterinjs/app/components",
+			"/data/projects/python/eatenv/eaterin/eaterinjs/app/templates",
+			"/data/projects/python/eatenv/eaterin/eaterinjs/app",
+			"/data/projects/python/eatenv/eaterin/eaterinjs/app/controllers",
+			"/data/projects/python/eatenv/eaterin/eaterinjs/app/styles",
+			"/data/projects/python/eatenv/eaterin/eaterinjs/app",
+			"/data/projects/python/eatenv/eaterin/eaterinjs/app/templates",
+			"/data/projects/python/eatenv/eaterin/eaterinjs/app/styles/app",
+			"/data/projects/python/eatenv/eaterin/eaterinjs/app/styles",
+			"/data/projects/python/eatenv/eaterin/eaterinjs/app",
+			"/data/projects/python/eatenv/eaterin/eaterinjs/app/styles/foundation",
+			"/data/projects/python/eatenv/eaterin/eaterinjs/app/templates",
+			"/data/projects/python/eatenv/eaterin/eaterinjs/app",
+			"/data/projects/python/eatenv/eaterin/jakt",
+			"/data/projects/python/eatenv/eaterin/static/eaterinjs/app/styles/foundation/components",
+			"/data/projects/python/eatenv/eaterin",
+			"/data/projects/php/source/findtoto/wp-content/plugins/lostpets/lp-core",
+			"/data/projects/php/source/findtoto/wp-content/plugins/lostpets",
+			"/data/projects/php/source/findtoto/wp-content/plugins/lostpets/lp-core",
+			"C:\\SOFTWARE\\webserver\\nginx\\html\\findtoto\\wp-content\\plugins\\lostpets",
+			"C:\\SOFTWARE\\webserver\\nginx\\html\\65doctormultilang\\protected",
+			"C:\\SOFTWARE\\webserver\\nginx\\html\\65doctormultilang\\protected\\views\\site",
+			"C:\\SOFTWARE\\webserver\\nginx\\html\\65doctormultilang\\themes\\65doctor",
+			"C:\\SOFTWARE\\webserver\\nginx\\html\\65doctormultilang\\protected",
+			"C:\\SOFTWARE\\xampp\\htdocs\\65doctormultilang"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"_httpRequest",
+			"transacion_id",
+			"transaction_id",
+			"transacion_id",
+			"bogo",
+			"custPhone",
+			"custph",
+			"json",
+			"invoice_id",
+			"class",
+			"\\w{5}-\\w{5}-\\w{5}",
+			"notice",
+			"extension",
+			"php_openssl",
+			"extension=php_openssl.dll",
+			"extension=php_openssl.dll ",
+			"/data/projects/php/merchant-webmoney",
+			"/data/projects/php/merchant-webmoney/static",
+			"base_",
+			"extension",
+			"cgi.fix_pathinfo",
+			"php",
+			"extension",
+			"mongo",
+			"imagick",
+			"extension",
+			"bitbucket.org/tongeek/v2go",
+			"\"eaterin/v2",
+			"eaterin/v2",
+			"2(\\d)",
+			"1(\\d)",
+			"0(\\d)",
+			"pkVal",
+			"tablenam",
+			"countSQLString",
+			"db",
+			"result",
+			"FieldMapValue",
+			"isupda",
+			"update",
+			"updayr",
+			"updatemo",
+			"setnew",
+			"extractFieldMap",
+			"adwaita",
+			"primary",
+			"merge",
+			"FieldMap",
+			"hasorder",
+			"json",
+			"default",
+			"URI",
+			"Initializes logger failed",
+			"NewUserSession",
+			"Summary",
+			"Empty user session data",
+			"false",
+			"template",
+			"errs",
+			"fmt.Print",
+			"user",
+			"HasPermissions",
+			"CanAccessAdmin",
+			"Context auth",
+			"ApplyRequest",
+			"authSessionName",
+			"type",
+			"AuthConfig",
+			"preload",
+			"layout",
+			"config",
+			"GetTemplatePath",
+			"real",
+			"isdis",
+			"isdis'",
+			"UserSession",
+			"Authenticator",
+			"8",
+			"func inarray",
+			"InArray(\\w+)\\(result, v\\)",
+			"InArray\\w+(result, v)",
+			"for i = 1",
+			"64",
+			"8",
+			"duplicated",
+			"8",
+			"PermissionHandler",
+			"GetContextUser",
+			"64",
+			"cfg",
+			"int",
+			"Int",
+			"Int\n",
+			"}\n",
+			"util",
+			"interface",
+			"field(",
+			"jason",
+			"Oauth2ProviderGrant",
+			"Oauth2ProviderAccessToken",
+			"UserOauth2Access",
+			"UserOauth2ProviderAccess",
+			"UserOauth2Access",
+			"UserActivityLog",
+			"longitude",
+			"UserActivityLog",
+			"UserRole",
+			"*User",
+			"User",
+			"usr",
+			"Pre",
+			"rand",
+			"Update",
+			"rule *",
+			"isemptypk",
+			"Field",
+			"errf",
+			"panic",
+			"RawSetting",
+			"[]int:",
+			"new",
+			"Field",
+			"insert",
+			"(v",
+			"case ",
+			"range v",
+			"if len(v)",
+			"case "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"\"bitbucket.org/tongeek/v2go",
+			"bitbucket.org/tongeek/v2go",
+			"3$1",
+			"2$1",
+			"1$1",
+			"target",
+			"Uri",
+			"64",
+			"32",
+			"16",
+			"32",
+			"16",
+			"InArray$1\\(v, result\\)",
+			"for i := 1",
+			"32",
+			"64",
+			"32",
+			"16",
+			"duplicating",
+			"64",
+			"32",
+			"16",
+			"uint",
+			"Uint",
+			"Oauth2ProviderRefreshToken",
+			"Oauth2ProviderGrant",
+			"Oauth2ProviderApplication",
+			"Oauth2Access",
+			"Oauth2ProviderAccess",
+			"UserOauth2ProviderAccess",
+			"UserOauth2Access",
+			"Address",
+			"UserActivityLog",
+			"*PasswordReset",
+			"PasswordReset",
+			"mdl",
+			"rule ",
+			"rule",
+			"User",
+			"(*v",
+			"case *",
+			"range *v",
+			"if len(*v)",
+			"case *",
+			"UserRole",
+			"if err != nil {\n					return nil, err \n				} \n              results = append(results, parsed)  ",
+			"",
+			"else {\n				return nil, fmt.Errorf(typeErrMessage, item)\n			}",
+			"Parse$1\\(item\\)",
+			"return &results, nil\\n",
+			"return results, nil\\n",
+			"return results, nil",
+			"fmt.Errorf(typeErrMessage, item)",
+			"",
+			"binding.Error",
+			"&binding.Error",
+			"*binding.Error",
+			"ErrType",
+			"ErrRequired",
+			"return nil, err",
+			"ret =",
+			"float32(",
+			"float64(",
+			"ParseUint",
+			"arr, uint",
+			"int(",
+			"int8(",
+			"int16(",
+			"int32(",
+			"ParseInt32",
+			"int64",
+			"ParseInt32",
+			"ParseInt8",
+			"ParseInt",
+			"ParseInt8",
+			"ParseInt16",
+			"ParseInt32",
+			"ParseInt64",
+			"return []bool{v != 0}",
+			"return uint",
+			"strconv.ParseInt(v, 10,",
+			" int",
+			" float32",
+			" int32",
+			"int16",
+			"int8",
+			"db.Err",
+			"binding.FieldMap",
+			"FieldMap",
+			"panic",
+			"errs Errors",
+			"{\n			rule.addError(fieldName, errs)\n            hasError = true\n		}",
+			"rule.addError(fieldName, errs)",
+			"rule.addError(fieldName, &errs)",
+			"_ = int64(*v)",
+			"rule.addError(fieldName, errs)",
+			"rule.addError",
+			"rule.addRequiredError(fieldName, rule, errs)",
+			"case *",
+			"${1:context}",
+			"case *",
+			"Controller",
+			"'",
+			"$to-color",
+			"to-color",
+			"from-color",
+			"$modal-padding",
+			"$modal-spacing",
+			"id",
+			".#{$fe-css-prefix}",
+			"Ember.get(this, ",
+			"'",
+			"",
+			"\"",
+			"'",
+			"value2",
+			"value1",
+			"Ember",
+			"Ember.$",
+			"Ember",
+			"'",
+			"eaterin",
+			"'",
+			"utility.fields.BigForeignKey",
+			"OWNER TO eater_dev",
+			"Owner: eater_dev",
+			"eater_dev"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.9o:///data/projects/go/src/eaterin/v2/account/model":
+	{
+		"height": 158.0
+	},
+	"output.9o:///data/projects/go/src/eaterin/v2/account/web":
+	{
+		"height": 158.0
+	},
+	"output.9o:///data/projects/go/src/eaterin/v2/binding":
+	{
+		"height": 158.0
+	},
+	"output.9o:///data/projects/go/src/eaterin/v2/oauth2":
+	{
+		"height": 158.0
+	},
+	"output.9o:///data/projects/go/src/eaterin/v2/web":
+	{
+		"height": 158.0
+	},
+	"output.GoSublime-main-output":
+	{
+		"height": 158.0
+	},
+	"output.exec":
+	{
+		"height": 132.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 124.0
+	},
+	"output.sftp":
+	{
+		"height": 124.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 132.0
+	},
+	"output.variable_get":
+	{
+		"height": 158.0
+	},
+	"pinned_build_system": "",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"enviro",
+				"config/environment.js"
+			],
+			[
+				"ic-mu",
+				"app/components/ic-multiselect.js"
+			],
+			[
+				"ic-crea",
+				"app/components/ic-createselect.js"
+			],
+			[
+				"ic-aut",
+				"app/components/ic-autocomplete.js"
+			],
+			[
+				"modelsfood",
+				"app/models/food.js"
+			],
+			[
+				"controllersfoodnew",
+				"app/controllers/foods/new.js"
+			],
+			[
+				"radio-",
+				"app/templates/components/formgroup/radio-buttons.hbs"
+			],
+			[
+				"radio",
+				"app/components/fd-radio.js"
+			],
+			[
+				"formgroupradio",
+				"app/templates/components/formgroup/radiogroup.hbs"
+			],
+			[
+				"componentsradio",
+				"app/components/fd-radio.js"
+			],
+			[
+				"routeapplic",
+				"app/routes/application.js"
+			],
+			[
+				"controllerquestsnew",
+				"app/controllers/quests/new.js"
+			],
+			[
+				"quest.js",
+				"app/models/quest.js"
+			],
+			[
+				"global-s",
+				"app/mixins/controllers/global-search.js"
+			],
+			[
+				"viewheader",
+				"app/views/header.js"
+			],
+			[
+				"envi",
+				"config/environment.js"
+			],
+			[
+				"environ",
+				"config/environment.js"
+			],
+			[
+				"mixins.c",
+				"app/styles/app/misc/_mixins.scss"
+			],
+			[
+				"mixins/controller/globa",
+				"app/mixins/controllers/global-search.js"
+			],
+			[
+				"globalse",
+				"app/components/ic-globalsearch.js"
+			],
+			[
+				"routesea",
+				"app/routes/search.js"
+			],
+			[
+				"ic-gol",
+				"app/components/ic-globalsearch.js"
+			],
+			[
+				"ic-",
+				"app/components/ic-autocomplete.js"
+			],
+			[
+				"resta",
+				"app/models/restaurant.js"
+			],
+			[
+				"validators/u",
+				"app/validators/local/url.js"
+			],
+			[
+				"controllers/foods/new",
+				"app/controllers/foods/new.js"
+			],
+			[
+				"foodmodels",
+				"jakt/food/models.py"
+			],
+			[
+				"mixin",
+				"jakt/utility/mixins.py"
+			],
+			[
+				"mixins",
+				"jakt/utility/mixins.py"
+			],
+			[
+				"restaurantmodel",
+				"jakt/restaurant/models.py"
+			],
+			[
+				"ini",
+				"jakt/mailing/migrations/0001_initial.py"
+			],
+			[
+				"timet",
+				"protected/modules/penguin/widgets/views/timeTable.php"
+			],
+			[
+				"main.css",
+				"themes/penguin/share/css/main.css"
+			],
+			[
+				"main.",
+				"css/main.css"
+			],
+			[
+				"time",
+				"protected/modules/penguin/widgets/views/timeTable.php"
+			],
+			[
+				"timeta",
+				"protected/modules/penguin/widgets/TimeTableWidget.php"
+			],
+			[
+				"harr",
+				"protected/helpers/HArray.php"
+			],
+			[
+				"calendarc",
+				"protected/modules/penguin/controllers/CalendarController.php"
+			],
+			[
+				"loginfo",
+				"protected/modules/user/models/LoginForm.php"
+			],
+			[
+				"apisite",
+				"protected/modules/api/controllers/SiteController.php"
+			],
+			[
+				"tran",
+				"protected/messages/en/translation.php"
+			],
+			[
+				"appoint",
+				"protected\\models\\Appointment.php"
+			],
+			[
+				"service",
+				"protected\\modules\\admin\\controllers\\ServiceController.php"
+			],
+			[
+				"setting",
+				"protected\\modules\\admin\\controllers\\SettingController.php"
+			],
+			[
+				"config.lo",
+				"protected\\config\\config.local.php"
+			],
+			[
+				"main",
+				"protected\\config\\main.php"
+			],
+			[
+				"main.re.js",
+				"themes\\65doctor\\js\\main.res.js"
+			],
+			[
+				"main.php",
+				"protected\\config\\main.php"
+			],
+			[
+				"view.php",
+				"protected\\messages\\en\\view.php"
+			],
+			[
+				"view",
+				"protected\\messages\\vi\\view.php"
+			],
+			[
+				"doctor_pro",
+				"protected\\modules\\member\\views\\users\\doctor_profile.php"
+			],
+			[
+				"doctor",
+				"protected\\models\\Doctor.php"
+			],
+			[
+				"spec",
+				"protected\\models\\Specialty.php"
+			],
+			[
+				"specialt",
+				"protected\\models\\Specialty.php"
+			],
+			[
+				"sitecontr",
+				"protected\\controllers\\SiteController.php"
+			],
+			[
+				"style2",
+				"themes\\65doctor\\css\\style2.css"
+			],
+			[
+				"select",
+				"themes\\65doctor\\css\\select2.css"
+			],
+			[
+				"advansearc",
+				"protected\\views\\search\\advanceSearch.php"
+			],
+			[
+				"form.css",
+				"themes\\65doctor\\admin\\css\\form.css"
+			],
+			[
+				"2001",
+				"db\\20140308.sql"
+			],
+			[
+				"doc65",
+				"themes\\65doctor\\js\\doc65.drag.js"
+			],
+			[
+				"exportboo",
+				"protected\\modules\\admin\\views\\export\\booking.php"
+			],
+			[
+				"activere",
+				"protected\\components\\ActiveRecord.php"
+			],
+			[
+				"booki",
+				"protected\\models\\Booking.php"
+			],
+			[
+				"doctor.php",
+				"protected\\models\\Doctor.php"
+			],
+			[
+				"article",
+				"protected\\models\\Articles.php"
+			],
+			[
+				"2014",
+				"db\\20140308.sql"
+			],
+			[
+				"form.cs",
+				"themes\\65doctor\\admin\\css\\form.css"
+			],
+			[
+				"woringt",
+				"protected\\modules\\admin\\views\\clinic\\workingTime.php"
+			],
+			[
+				"addtimeslot",
+				"protected\\modules\\admin\\views\\manageappointment\\_formaddtimeslot.php"
+			],
+			[
+				"excel",
+				"protected\\models\\ExcelBooking.php"
+			],
+			[
+				"active",
+				"protected\\components\\ActiveRecord.php"
+			],
+			[
+				"doc65do",
+				"themes\\65doctor\\js\\doc65.doctor.js"
+			],
+			[
+				"export",
+				"protected\\modules\\admin\\controllers\\ExportController.php"
+			],
+			[
+				"_formb",
+				"protected\\modules\\admin\\views\\buffer\\_formBuffer.php"
+			],
+			[
+				"transl",
+				"protected\\messages\\en\\translation.php"
+			],
+			[
+				"searchcon",
+				"protected\\controllers\\SearchController.php"
+			],
+			[
+				"select2",
+				"themes\\65doctor\\css\\select2.css"
+			],
+			[
+				"combox",
+				"themes\\65doctor\\js\\jquery.combobox.js"
+			],
+			[
+				"bookin",
+				"protected\\models\\Booking.php"
+			],
+			[
+				"expo",
+				"protected\\modules\\admin\\controllers\\ExportController.php"
+			],
+			[
+				"booking.php",
+				"protected\\models\\Booking.php"
+			],
+			[
+				"booking",
+				"html\\booking-details.html"
+			],
+			[
+				"_formbuffer",
+				"protected\\modules\\admin\\views\\buffer\\_formBuffer.php"
+			],
+			[
+				"doc65se",
+				"themes\\65doctor\\js\\doc65.service.js"
+			],
+			[
+				"doc65.ex",
+				"themes\\65doctor\\js\\doc65.export.js"
+			],
+			[
+				"global",
+				"themes\\65doctor\\js\\doc65.global.js"
+			],
+			[
+				"doc65.se",
+				"themes\\65doctor\\js\\doc65.service.js"
+			],
+			[
+				"activerecord",
+				"protected\\components\\ActiveRecord.php"
+			],
+			[
+				"searchco",
+				"protected\\controllers\\SearchController.php"
+			],
+			[
+				"clinic",
+				"protected\\models\\Clinic.php"
+			],
+			[
+				"form",
+				"themes\\65doctor\\admin\\css\\form.css"
+			],
+			[
+				"creatapp",
+				"protected\\commands\\CreateAppointmentCommand.php"
+			],
+			[
+				"managebuffer",
+				"protected\\modules\\admin\\views\\buffer\\manageBuffers.php"
+			],
+			[
+				"editbu",
+				"protected\\modules\\admin\\views\\buffer\\editBuffer.php"
+			],
+			[
+				"buffer",
+				"protected\\models\\Buffers.php"
+			],
+			[
+				"appoin",
+				"protected\\models\\Appointment.php"
+			],
+			[
+				"addtime",
+				"protected\\modules\\admin\\views\\manageappointment\\addtimeslot.php"
+			],
+			[
+				"addt",
+				"protected\\modules\\admin\\views\\manageappointment\\addtimeslot.php"
+			],
+			[
+				"cli",
+				"protected\\models\\Clinic.php"
+			],
+			[
+				"appo",
+				"protected\\models\\Appointment.php"
+			],
+			[
+				"menus",
+				"protected\\models\\Menus.php"
+			],
+			[
+				"myse",
+				"protected\\components\\MySendEmail.php"
+			],
+			[
+				"vouchers",
+				"protected\\models\\Vouchers.php"
+			],
+			[
+				"estorecon",
+				"protected\\modules\\member\\controllers\\EstoreController.php"
+			],
+			[
+				"package",
+				"protected\\models\\Packages.php"
+			],
+			[
+				"manage",
+				"protected\\modules\\admin\\controllers\\ManageadminController.php"
+			],
+			[
+				"address",
+				"protected\\models\\Address.php"
+			],
+			[
+				"componentpa",
+				"protected\\components\\Paypal.php"
+			],
+			[
+				"estoreco",
+				"protected\\modules\\member\\controllers\\EstoreController.php"
+			],
+			[
+				"step3",
+				"protected\\modules\\member\\views\\estore\\purchase\\step3.php"
+			],
+			[
+				"eshop.css",
+				"themes\\65doctor\\css\\eshop.css"
+			],
+			[
+				"step2",
+				"protected\\modules\\member\\views\\estore\\purchase\\step2.php"
+			],
+			[
+				"adminservicecon",
+				"protected\\modules\\admin\\controllers\\ServiceController.php"
+			],
+			[
+				"managedocto",
+				"protected\\controllers\\ManagedoctorController.php"
+			],
+			[
+				"_formtim",
+				"protected\\modules\\admin\\views\\manageappointment\\_formaddtimeslot.php"
+			],
+			[
+				"promo",
+				"protected\\modules\\admin\\controllers\\PromotionCodeController.php"
+			],
+			[
+				"for",
+				"themes\\65doctor\\admin\\css\\form.css"
+			],
+			[
+				"appoi",
+				"protected\\models\\Appointment.php"
+			],
+			[
+				"add",
+				"protected\\models\\Address.php"
+			],
+			[
+				"addr",
+				"protected\\models\\Address.php"
+			],
+			[
+				"users",
+				"protected\\models\\Users.php"
+			],
+			[
+				"managetime",
+				"protected\\extensions\\manageTimeSlot\\ManageTimeSlot.php"
+			],
+			[
+				"tra",
+				"protected\\messages\\en\\translation.php"
+			],
+			[
+				"searchindex",
+				"protected\\views\\search\\index.php"
+			],
+			[
+				"local",
+				"protected\\config\\config.local.php"
+			],
+			[
+				"manageapp",
+				"protected\\modules\\admin\\controllers\\ManageappointmentController.php"
+			],
+			[
+				"settin",
+				"protected\\models\\SettingForm.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 283.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
