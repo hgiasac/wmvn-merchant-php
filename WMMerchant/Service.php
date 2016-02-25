@@ -12,7 +12,7 @@ use WMMerchant\models\CreateOrderResponse;
 class Service {
 
 
-    const URL_CREATE_ORDER = 'http://apimerchant.webmoney.prj/payment/create-order';
+    const URL_CREATE_ORDER = 'http://apimerchant.webmoney.com.vn/payment/create-order';
 
     /**
      * Merchant passcode
