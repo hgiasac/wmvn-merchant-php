@@ -19,7 +19,8 @@ Sample code
 
 Thư viện yêu cầu passcode và secret_key, do Webmoney cung cấp, nhập vào hàm globalConfig trong file sample/config.php
 
-```function globalConfig() {
+```php
+function globalConfig() {
     return array(
         'passcode' => 'YOUR PASSCODE',
         'secret_key' => 'YOUR SECRET KEY',
