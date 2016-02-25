@@ -36,3 +36,4 @@ phpunit.phar
 /static/upload/
 
 .sublime-project
+.sublime-workspace
