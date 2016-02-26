@@ -23,7 +23,7 @@ class ResponseModel {
      *
      * @var string
      */
-    public $error_code;
+    public $errorCode;
     /**
      * Response object data
      *
@@ -42,7 +42,7 @@ class ResponseModel {
      *
      * @var string
      */
-    public $ui_message;
+    public $uiMessage;
 
     /**
      * Unique checksum of model
@@ -57,7 +57,7 @@ class ResponseModel {
      * @return boolean
      */
     public function isError() {
-        return $this->error_code != self::SUCCESS_CODE;
+        return $this->errorCode != self::SUCCESS_CODE;
     }
 
     /**
@@ -81,14 +81,14 @@ class ResponseModel {
             die;
         }
         $resp = new self;
-        if (isset($response['error_code'])) {
-            $resp->error_code = $response['error_code'];
+        if (isset($response['errorCode'])) {
+            $resp->errorCode = $response['errorCode'];
         }
         if (isset($response['message'])) {
             $resp->message = $response['message'];
         }
-        if (isset($response['ui_message'])) {
-            $resp->ui_message = $response['ui_message'];
+        if (isset($response['uiMessage'])) {
+            $resp->ui_message = $response['uiMessage'];
         }
 
         if (isset($response['checksum'])) {

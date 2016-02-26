@@ -3,40 +3,38 @@
  * @Author: tongeek
  * @Date:   2016-02-21 15:15:38
  * @Last Modified by:   hgiasac
- * @Last Modified time: 2016-02-26 16:38:08
+ * @Last Modified time: 2016-02-26 23:58:50
  */
 
 namespace sample\controllers;
 
 use sample\inc\Controller;
 use WMMerchant\WMService;
-use WMMerchant\models\CreateOrderRequest;
-use WMMerchant\models\CreateOrderResponse;
+use WMMerchant\models\ViewOrderRequest;
+use WMMerchant\models\ViewOrderResponse;
 
 /**
  * Create Order controller
  */
-class CreateOrderController extends Controller {
+class ViewOrderController extends Controller {
 
     protected function get($result) {
 
-        $model = new CreateOrderRequest();
-        $model->setAttributes($this->config['order']);
-        $model->mTransactionID = time();
-        $result['order'] = $model;
+        $form = new ViewOrderRequest();
+        $result['form'] = $form;
 
         return $result;
     }
 
     protected function post($result) {
-        $model = new CreateOrderRequest();
-        $model->setAttributes($_POST);
+        $form = new ViewOrderRequest();
+        $form->setAttributes($_POST);
 
         $service = new WMService($this->config['wm_merchant']);
-        $resp = $service->createOrder($model);
+        $resp = $service->viewOrder($form);
 
         $result = array(
-            'order' => $model,
+            'form' => $form,
             'response' => $resp,
         );
 
@@ -52,6 +50,6 @@ class CreateOrderController extends Controller {
             $result = $this->get($result);
         }
 
-        $this->render('create_order', $result);
+        $this->render('view_order', $result);
     }
 }

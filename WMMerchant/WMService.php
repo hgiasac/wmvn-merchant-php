@@ -6,6 +6,8 @@ use WMMerchant\base\Security;
 use WMMerchant\base\NetHelper;
 use WMMerchant\base\ResponseModel;
 use WMMerchant\models\CreateOrderResponse;
+use WMMerchant\models\ViewOrderResponse;
+
 /**
  * Webmoney service helpers
  */
@@ -200,7 +202,7 @@ class WMService {
      * @return WMMerchant\base\ResponseMmodel           Response model
      */
     public function createOrder($request) {
-        $url = $this->createURL('create-order');
+        $url = $this->createURL('create');
         $this->validateCodes();
 
         $curl = $this->getCurl();
@@ -211,6 +213,27 @@ class WMService {
         $resp = $curl->setOption(CURLOPT_POSTFIELDS, $json_data)->post($url, true);
 
         $response = ResponseModel::load($resp, $this->secret_key, new CreateOrderResponse);
+
+        return $response;
+    }
+
+    /**
+     * View order request
+     *
+     * @param  WMMerchant\models\CreateOrderRequest $request Request data
+     *
+     * @return WMMerchant\base\ResponseMmodel           Response model
+     */
+    public function viewOrder($request) {
+        $url = $this->createURL('view');
+        $this->validateCodes();
+
+        $curl = $this->getCurl();
+        $request->hashChecksum($this->passcode, $this->secret_key);
+        $json_data = json_encode($request);
+        $resp = $curl->setOption(CURLOPT_POSTFIELDS, $json_data)->post($url, true);
+
+        $response = ResponseModel::load($resp, $this->secret_key, new ViewOrderResponse);
 
         return $response;
     }

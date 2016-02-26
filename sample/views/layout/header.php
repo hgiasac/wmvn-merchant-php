@@ -33,7 +33,7 @@
         <div id="navbar" class="navbar-collapse collapse">
             <div class="navbar-right">
                 <a class="navbar-brand" href="create-order.php">Create Order</a>
-                <a class="navbar-brand" href="query-order.php">Query Order</a>
+                <a class="navbar-brand" href="view-order.php">View Order</a>
             </div>
         </div><!--/.navbar-collapse -->
       </div>

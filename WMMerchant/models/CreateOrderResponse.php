@@ -3,7 +3,7 @@
  * @Author: toan.nguyen
  * @Date:   2016-02-21 14:42:57
  * @Last Modified by:   hgiasac
- * @Last Modified time: 2016-02-25 15:06:36
+ * @Last Modified time: 2016-02-27 00:11:14
  */
 
 namespace WMMerchant\models;
@@ -21,13 +21,13 @@ class CreateOrderResponse extends RequestModel {
      *
      * @var string
      */
-    public $transaction_id;
+    public $transactionID;
     /**
      * Redirect URL
      *
      * @var string
      */
-    public $redirect_url;
+    public $redirectURL;
 
 
     /*
@@ -35,8 +35,8 @@ class CreateOrderResponse extends RequestModel {
      */
     public function attributeLabels() {
         return array(
-            'transaction_id'    => 'Transaction ID',
-            'redirect_url'      => 'Redirect URL',
+            'transactionID'    => 'Transaction ID',
+            'redirectURL'      => 'Redirect URL',
         );
     }
 
@@ -47,8 +47,8 @@ class CreateOrderResponse extends RequestModel {
      */
     public function getAttributes() {
         return array(
-            'transaction_id'       => $this->transaction_id,
-            'redirect_url'       => $this->redirect_url,
+            'transactionID'       => $this->transactionID,
+            'redirectURL'       => $this->redirectURL,
         );
     }
 
@@ -59,6 +59,6 @@ class CreateOrderResponse extends RequestModel {
      * @return array
      */
     public function hashAttributes() {
-        return array('transaction_id', 'redirect_url');
+        return array('transactionID', 'redirectURL');
     }
 }

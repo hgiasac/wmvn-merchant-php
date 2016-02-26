@@ -3,8 +3,8 @@
 function globalConfig() {
     return array(
         'wm_merchant' => array(
-            'passcode' => 'YOUR PASSCODE',
-            'secret_key' => 'YOUR SECRET KEY',
+            'passcode' => 'M_HASH',
+            'secret_key' => 'test@webmoney',
             'production_mode' => false, // true if in production mode
         ),
         'order'  => array(

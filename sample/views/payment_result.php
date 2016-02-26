@@ -39,6 +39,7 @@
                     break;
             }
             endif;
+            include '_order_response.php';
             ?>
 
         </div>

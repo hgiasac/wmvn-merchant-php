@@ -1,30 +1,4 @@
-<div class="container">
-    <div class="row">
-        <div class="col-12-xs">
-            <form action="" method="post">
-                    <?php
-                        $attributes = $result['order']->getAttributes();
-                        $labels = $result['order']->attributeLabels();
-                        foreach ($attributes as $key => $value):
-                        	if ($key === 'checksum') {
-                        		continue;
-                        	}
-
-	                   ?>
-			                <div class="form-group">
-			                    <label class="col-3-xs" for="<?php echo $key; ?>"><?php echo $labels[$key]; ?></label>
-			                    <input class="col-9-xs form-control" type="text" name="<?php echo $key; ?>" value="<?php echo $value; ?>">
-			                </div>
-			            <?php endforeach;?>
-                <div class="form-group">
-                    <label class="col-3-xs" for="checksum"><?php echo $labels['checksum']; ?></label>
-                    <input class="col-9-xs form-control" type="text" value="<?php echo $result['order']->checksum; ?>" readonly>
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-        </div>
-    </div>
-    <?php if (!empty($result['response'])): ?>
+<?php if (!empty($result['response'])): ?>
         <div class="row">
             <div class="col-12-xs">
                 <h4>Response Code</h4>
@@ -47,8 +21,20 @@
                         <td><?php echo $result['response']->object->transactionID; ?></td>
                     </tr>
                     <tr>
-                        <td><b>Redirect URL:</b></td>
-                        <td><a target="_blank" href="<?= $result['response']->object->redirectURL; ?>"><?= $result['response']->object->redirectURL; ?></a></td>
+                        <td><b>Invoice ID:</b></td>
+                        <td><?php echo $result['response']->object->invoiceID; ?></td>
+                    </tr>
+                    <tr>
+                        <td><b>Description:</b></td>
+                        <td><?php echo $result['response']->object->description; ?></td>
+                    </tr>
+                    <tr>
+                        <td><b>Total Amount:</b></td>
+                        <td><?php echo $result['response']->object->totalAmount; ?></td>
+                    </tr>
+                    <tr>
+                        <td><b>Status:</b></td>
+                        <td><?php echo $result['response']->object->status; ?></td>
                     </tr>
                     <?php elseif (!empty($result['response']->object)): ?>
                     <tr>
@@ -68,4 +54,3 @@
             </div>
         </div>
     <?php endif;?>
-</div>
