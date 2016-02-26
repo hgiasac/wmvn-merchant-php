@@ -3,13 +3,13 @@
  * @Author: tongeek
  * @Date:   2016-02-21 15:15:38
  * @Last Modified by:   hgiasac
- * @Last Modified time: 2016-02-25 01:13:16
+ * @Last Modified time: 2016-02-25 23:07:15
  */
 
 namespace sample\controllers;
 
 use sample\inc\Controller;
-use WMMerchant\Service;
+use WMMerchant\WMService;
 use WMMerchant\models\CreateOrderRequest;
 use WMMerchant\models\CreateOrderResponse;
 
@@ -22,7 +22,6 @@ class CreateOrderController extends Controller {
 
         $model = new CreateOrderRequest();
         $model->setAttributes($this->config['order']);
-        $model->passcode = $this->config['passcode'];
         $result['order'] = $model;
 
         return $result;
@@ -32,7 +31,7 @@ class CreateOrderController extends Controller {
         $model = new CreateOrderRequest();
         $model->setAttributes($_POST);
 
-        $service = new Service($this->config['passcode'], $this->config['secret_key']);
+        $service = new WMService($this->config['wm_merchant']);
         $resp = $service->createOrder($model);
 
         $result = array(

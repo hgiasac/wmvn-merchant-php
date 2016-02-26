@@ -34,6 +34,10 @@ class Security {
      * @return string           Result Hash string
      */
     public static function hashChecksumModel($model, $secret, $passcode = "") {
+
+        if ($model == null) {
+            throw new \Exception("Can not hash null Model");
+        }
         $plainString = '';
         $attributes = $model->hashAttributes();
 

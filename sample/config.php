@@ -2,8 +2,10 @@
 
 function globalConfig() {
     return array(
-        'passcode' => 'M_HASH',
-        'secret_key' => 'test@webmoney',
+        'wm_merchant' => array(
+            'passcode' => 'M_HASH',
+            'secret_key' => 'test@webmoney',
+        ),
         'order'  => array(
             'mTransactionID'    => '2345234234234',
 
@@ -15,7 +17,7 @@ function globalConfig() {
             'custPhone'         => '012345678',
             'cancelURL'         => '',
             'errorURL'          => '',
-            'resultURL'         => 'localhost:8080',
+            'resultURL'         => '',
             'description'       => 'Mua hàng tại merchant ABC',
             'totalAmount'       => 100,
         )

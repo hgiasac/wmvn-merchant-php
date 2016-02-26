@@ -48,7 +48,7 @@
                     </tr>
                     <tr>
                         <td><b>Redirect URL:</b></td>
-                        <td><?php echo $result['response']->object->redirect_url; ?></td>
+                        <td><a target="_blank" href="<?= $result['response']->object->redirect_url; ?>"><?= $result['response']->object->redirect_url; ?></a></td>
                     </tr>
                     <?php elseif (!empty($result['response']->object)): ?>
                     <tr>

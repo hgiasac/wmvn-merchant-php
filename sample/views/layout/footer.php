@@ -1,9 +1,14 @@
     <hr>
 
       <footer>
-        <p>&copy; 2015 Company, Inc.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>&copy; 2015 Company, Inc.</p>
+                </div>
+            </div>
+        </div><!-- /container -->
       </footer>
-    </div> <!-- /container -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

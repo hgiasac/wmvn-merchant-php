@@ -18,8 +18,8 @@ class Controller {
 
     public function render($view_name, $result = null) {
         $view_dir = 'views';
-        $header_path = $view_dir . DIRECTORY_SEPARATOR . 'header.php';
-        $footer_path = $view_dir . DIRECTORY_SEPARATOR . 'footer.php';
+        $header_path = $view_dir . DIRECTORY_SEPARATOR . 'layout' . DIRECTORY_SEPARATOR . 'header.php';
+        $footer_path = $view_dir . DIRECTORY_SEPARATOR . 'layout' . DIRECTORY_SEPARATOR . 'footer.php';
         $view_path = $view_dir . DIRECTORY_SEPARATOR . $view_name . '.php';
 
         include $header_path;
