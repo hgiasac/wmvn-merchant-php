@@ -15,28 +15,18 @@
                         <td><b>UI Message:</b></td>
                         <td><?php echo $result['response']->uiMessage; ?></td>
                     </tr>
-                    <?php if (!$result['response']->isError()): ?>
+                <?php if (!$result['response']->isError()): ?>
+                    <?php
+                        $attributes = $result['response']->object->getAttributes();
+                        $labels = $result['response']->object->attributeLabels();
+                        foreach ($attributes as $key => $value):
+                    ?>
                     <tr>
-                        <td><b>Transaction ID:</b></td>
-                        <td><?php echo $result['response']->object->transactionID; ?></td>
+                        <td><b><?= $labels[$key]; ?></b></td>
+                        <td><?= $value ?></td>
                     </tr>
-                    <tr>
-                        <td><b>Invoice ID:</b></td>
-                        <td><?php echo $result['response']->object->invoiceID; ?></td>
-                    </tr>
-                    <tr>
-                        <td><b>Description:</b></td>
-                        <td><?php echo $result['response']->object->description; ?></td>
-                    </tr>
-                    <tr>
-                        <td><b>Total Amount:</b></td>
-                        <td><?php echo $result['response']->object->totalAmount; ?></td>
-                    </tr>
-                    <tr>
-                        <td><b>Status:</b></td>
-                        <td><?php echo $result['response']->object->status; ?></td>
-                    </tr>
-                    <?php elseif (!empty($result['response']->object)): ?>
+                    <?php endforeach;?>
+                <?php elseif (!empty($result['response']->object)): ?>
                     <tr>
                         <td><b>Data:</b></td>
                         <td>
@@ -45,7 +35,7 @@
                             </pre>
                         </td>
                     </tr>
-                    <?php endif;?>
+                <?php endif;?>
                     <tr>
                         <td><b>Checksum:</b></td>
                         <td><?php echo $result['response']->checksum; ?></td>
