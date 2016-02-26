@@ -22,8 +22,11 @@ Thư viện yêu cầu passcode và secret_key, do Webmoney cung cấp, nhập v
 ```php
 function globalConfig() {
     return array(
-        'passcode' => 'YOUR PASSCODE',
-        'secret_key' => 'YOUR SECRET KEY',
+        'wm_merchant' => array(
+            'passcode' => 'YOUR PASSCODE',
+            'secret_key' => 'YOUR SECRET KEY',
+            'production_mode' => false, // true if in production mode
+        ),
         ...
     );
 }

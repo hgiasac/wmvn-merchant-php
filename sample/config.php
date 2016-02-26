@@ -5,6 +5,7 @@ function globalConfig() {
         'wm_merchant' => array(
             'passcode' => 'YOUR PASSCODE',
             'secret_key' => 'YOUR SECRET KEY',
+            'production_mode' => false, // true if in production mode
         ),
         'order'  => array(
             'mTransactionID'    => '2345234234234',

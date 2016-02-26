@@ -21,46 +21,7 @@ class WMService {
     const WAITING_STATUS = 'WM_WAITING';
     const CANCELED_STATUS = 'WM_CANCELED';
 
-    /**
-     * Get status codes
-     *
-     * @return array
-     */
-    public static function statusCodes() {
-        return [
-            self::WAITING_STATUS => 'Waiting',
-            self::SUCCESS_STATUS => 'Success',
-            self::FAIL_STATUS => 'Failed',
-            self::CANCELED_STATUS => 'Canceled',
-        ];
-    }
 
-    /**
-     * Get status code from code list
-     *
-     * @param  int $code status code as integer
-     * @return string       status code as string
-     */
-    public static function getStatusCode($code) {
-        $codes = self::statusCodes();
-
-        if (!empty($codes[$code])) {
-            return $codes[$code];
-        }
-
-        throw new Exception("Invalid status code: " . $code);
-    }
-    /**
-     * Create target API URL
-     *
-     * @param  string $action Action name
-     *
-     * @return string         REST URL
-     */
-    public function createURL($action) {
-        $mode = $this->production_mode ? self::PRODUCTION_PATH : self::SANDBOX_PATH;
-        return self::WMMERCHANT_HOST . $mode . '/' . $action;
-    }
 
     /**
      * Switch between production and test mode
@@ -141,6 +102,46 @@ class WMService {
         }
     }
 
+    /**
+     * Get status codes
+     *
+     * @return array
+     */
+    public static function statusCodes() {
+        return [
+            self::WAITING_STATUS => 'Waiting',
+            self::SUCCESS_STATUS => 'Success',
+            self::FAIL_STATUS => 'Failed',
+            self::CANCELED_STATUS => 'Canceled',
+        ];
+    }
+
+    /**
+     * Get status code from code list
+     *
+     * @param  int $code status code as integer
+     * @return string       status code as string
+     */
+    public static function getStatusCode($code) {
+        $codes = self::statusCodes();
+
+        if (!empty($codes[$code])) {
+            return $codes[$code];
+        }
+
+        throw new Exception("Invalid status code: " . $code);
+    }
+    /**
+     * Create target API URL
+     *
+     * @param  string $action Action name
+     *
+     * @return string         REST URL
+     */
+    public function createURL($action) {
+        $mode = $this->production_mode ? self::PRODUCTION_PATH : self::SANDBOX_PATH;
+        return self::WMMERCHANT_HOST . $mode . '/' . $action;
+    }
     /**
      * Parse transaction redirect result URL
      *
