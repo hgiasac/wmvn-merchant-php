@@ -13,7 +13,7 @@ use WMMerchant\models\ViewOrderResponse;
  */
 class WMService {
 
-    const WMMERCHANT_HOST = 'http://apimerchant.webmoney.prj/';
+    const WMMERCHANT_HOST = 'http://apimerchant.webmoney.com.vn/';
 
     const PRODUCTION_PATH = 'payment';
     const SANDBOX_PATH = 'sandbox';
