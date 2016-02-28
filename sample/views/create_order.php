@@ -49,11 +49,12 @@
                     <tr>
                         <td><b>Redirect URL:</b></td>
                         <td><a target="_blank" href="<?= $result['response']->object->redirectURL; ?>"><?= $result['response']->object->redirectURL; ?></a></td>
-                        <tr>
-                            <td><b>Checksum:</b></td>
-                            <td><?php echo $result['response']->object->checksum; ?></td>
-                        </tr>
                     </tr>
+                    <tr>
+                        <td><b>Checksum:</b></td>
+                        <td><?php echo $result['response']->object->checksum; ?></td>
+                    </tr>
+                    
                 <?php endif; ?>
                 </table>
             </div>

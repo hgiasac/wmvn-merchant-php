@@ -34,6 +34,8 @@
             <div class="navbar-right">
                 <a class="navbar-brand" href="create-order.php">Create Order</a>
                 <a class="navbar-brand" href="view-order.php">View Order</a>
+                <a class="navbar-brand" href="products.php">Demo</a>
+
             </div>
         </div><!--/.navbar-collapse -->
       </div>

@@ -3,7 +3,7 @@
  * @Author: tongeek
  * @Date:   2016-02-21 15:15:38
  * @Last Modified by:   hgiasac
- * @Last Modified time: 2016-02-27 00:30:17
+ * @Last Modified time: 2016-02-28 21:44:42
  */
 
 namespace sample\controllers;
@@ -26,6 +26,8 @@ class ResultController extends Controller {
         $valid = $service->validateResultURL($code);
         if ($valid !== true) {
             $result['error_message'] = $valid;
+
+            return $this->render('error', $result);
         } else {
             $result['type'] = $type;
             $result['transaction_id'] = $_GET['transaction_id'];
@@ -38,21 +40,18 @@ class ResultController extends Controller {
             $result['response'] = $resp;
         }
 
-        return $result;
+        $this->render('payment_result', $result);
     }
 
     public function success() {
-        $result = $this->applyResult('success', WMService::SUCCESS_STATUS);
-        $this->render('payment_result', $result);
+        $this->applyResult('success', WMService::SUCCESS_STATUS);
     }
 
     public function failed() {
-        $result = $this->applyResult('failed', WMService::FAILED_STATUS);
-        $this->render('payment_result', $result);
+        $this->applyResult('failed', WMService::FAILED_STATUS);
     }
 
     public function cancel() {
-        $result = $this->applyResult('cancel', WMService::CANCELED_STATUS);
-        $this->render('payment_result', $result);
+        $this->applyResult('cancel', WMService::CANCELED_STATUS);
     }
 }

@@ -18,12 +18,19 @@ class Controller {
 
     public function render($view_name, $result = null) {
         $view_dir = 'views';
-        $header_path = $view_dir . DIRECTORY_SEPARATOR . 'layout' . DIRECTORY_SEPARATOR . 'header.php';
-        $footer_path = $view_dir . DIRECTORY_SEPARATOR . 'layout' . DIRECTORY_SEPARATOR . 'footer.php';
-        $view_path = $view_dir . DIRECTORY_SEPARATOR . $view_name . '.php';
+        $header_path = BASE_DIR . DIRECTORY_SEPARATOR . $view_dir . DIRECTORY_SEPARATOR . 'layout' . DIRECTORY_SEPARATOR . 'header.php';
+        $footer_path = BASE_DIR . DIRECTORY_SEPARATOR . $view_dir . DIRECTORY_SEPARATOR . 'layout' . DIRECTORY_SEPARATOR . 'footer.php';
+        $view_path = BASE_DIR . DIRECTORY_SEPARATOR . $view_dir . DIRECTORY_SEPARATOR . $view_name . '.php';
 
         include $header_path;
         include $view_path;
         include $footer_path;
+    }
+
+    public function renderPartial($view_name, $result = null) {
+        $view_dir = 'views';
+        $view_path = BASE_DIR . DIRECTORY_SEPARATOR . $view_dir . DIRECTORY_SEPARATOR . $view_name . '.php';
+
+        include $view_path;
     }
 }

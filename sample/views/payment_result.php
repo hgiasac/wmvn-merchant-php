@@ -1,13 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
-            <?php if (!empty($result['error_message'])) : ?>
-                <h2>Có lỗi xảy ra</h2>
-                <div class="alert alert-danger" role="alert">
-                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                    <?php echo $result['error_message']; ?>
-                </div>
-            <?php else:
+            <?php
             switch ($result['type']) {
                 case 'success':
             ?>
@@ -38,7 +32,6 @@
             <?php
                     break;
             }
-            endif;
             include '_order_response.php';
             ?>
 

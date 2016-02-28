@@ -94,6 +94,7 @@ class WMService {
             'Authorization:' . $this->passcode,
             'X-Forwarded-Host:' . $_SERVER['HTTP_HOST'],
             'X-Forwarded-For:' . $_SERVER['SERVER_ADDR'],
+            'Referer:' . NetHelper::getCurrentURL(),
         ));
         $curl->setOption(CURLOPT_TIMEOUT, 200);
         $curl->setOption(CURLOPT_CONNECTTIMEOUT, 200);
