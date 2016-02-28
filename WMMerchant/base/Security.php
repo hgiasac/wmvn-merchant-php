@@ -48,7 +48,7 @@ class Security {
         if (!empty($passcode)) {
             $plainString = $plainString . $passcode;
         }
-        return hash_hmac('sha1', $plainString, $secret);
+        return self::hashChecksum($plainString, $secret);
     }
 
     /**
@@ -60,7 +60,9 @@ class Security {
      * @return string           Result Hash string
      */
     public static function hashChecksum($text, $secret) {
-        return hash_hmac('sha1', $text, $secret);
+        $hash =  hash_hmac('sha1', $text, $secret);
+
+        return strtoupper($hash);
     }
 
     /**

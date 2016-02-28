@@ -54,7 +54,7 @@ class ViewOrderResponse extends RequestModel {
     /**
      * Webmoney invoice ID
      *
-     * @var [int
+     * @var int
      */
     public $invoiceID;
     /**

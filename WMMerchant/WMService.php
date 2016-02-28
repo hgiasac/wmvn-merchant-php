@@ -14,6 +14,7 @@ use WMMerchant\models\ViewOrderResponse;
 class WMService {
 
     const WMMERCHANT_HOST = 'http://apimerchant.webmoney.com.vn/';
+    const WMMERCHANT_HOST_TEST = 'http://apimerchant.webmoney.prj/';
 
     const PRODUCTION_PATH = 'payment';
     const SANDBOX_PATH = 'sandbox';
@@ -31,6 +32,14 @@ class WMService {
      * @var boolean
      */
     public $production_mode;
+
+    /**
+     * If this client using local debug
+     *  This property is used by Webmoney developer only, so you don't need caring about this
+     *
+     * @var boolean
+     */
+    public $is_local_test;
 
     /**
      * Merchant passcode
@@ -70,6 +79,7 @@ class WMService {
         $this->passcode = $settings['passcode'];
         $this->secret_key = $settings['secret_key'];
         $this->production_mode = !empty($settings['production_mode']);
+        $this->is_local_test = !empty($settings['is_local_test']);
     }
 
     /**
@@ -141,8 +151,9 @@ class WMService {
      * @return string         REST URL
      */
     public function createURL($action) {
+        $host = $this->is_local_test ? self::WMMERCHANT_HOST_TEST : self::WMMERCHANT_HOST;
         $mode = $this->production_mode ? self::PRODUCTION_PATH : self::SANDBOX_PATH;
-        return self::WMMERCHANT_HOST . $mode . '/' . $action;
+        return $host . $mode . '/' . $action;
     }
     /**
      * Parse transaction redirect result URL
@@ -150,6 +161,8 @@ class WMService {
      * @return mixed TRUE if no error, error string if validate data failed
      */
     public function validateResultURL($status) {
+        $this->validateCodes();
+
         if (empty($_GET['transaction_id'])) {
             return 'Empty transaction id';
         }
@@ -170,7 +183,7 @@ class WMService {
      *
      * @return mixed TRUE if no error, error string if validate data failed
      */
-    public function validateSuccessURL($status) {
+    public function validateSuccessURL() {
         return $this->validateResultURL(self::SUCCESS_STATUS);
     }
 
@@ -179,7 +192,7 @@ class WMService {
      *
      * @return mixed TRUE if no error, error string if validate data failed
      */
-    public function validateFailedURL($status) {
+    public function validateFailedURL() {
         return $this->validateResultURL(self::FAILED_STATUS);
     }
 
@@ -189,7 +202,7 @@ class WMService {
      *
      * @return mixed TRUE if no error, error string if validate data failed
      */
-    public function validateCanceledURL($status) {
+    public function validateCanceledURL() {
         return $this->validateResultURL(self::CANCELED_STATUS);
     }
 
@@ -202,7 +215,7 @@ class WMService {
      * @return WMMerchant\base\ResponseMmodel           Response model
      */
     public function createOrder($request) {
-        $url = $this->createURL('create');
+        $url = $this->createURL('create-order');
         $this->validateCodes();
 
         $curl = $this->getCurl();
@@ -212,7 +225,7 @@ class WMService {
         $json_data = json_encode($request);
         $resp = $curl->setOption(CURLOPT_POSTFIELDS, $json_data)->post($url, true);
 
-        $response = ResponseModel::load($resp, $this->secret_key, new CreateOrderResponse);
+        $response = ResponseModel::load($resp, new CreateOrderResponse, $this->secret_key);
 
         return $response;
     }
@@ -225,7 +238,8 @@ class WMService {
      * @return WMMerchant\base\ResponseMmodel           Response model
      */
     public function viewOrder($request) {
-        $url = $this->createURL('view');
+
+        $url = $this->createURL('view-order');
         $this->validateCodes();
 
         $curl = $this->getCurl();
@@ -233,7 +247,7 @@ class WMService {
         $json_data = json_encode($request);
         $resp = $curl->setOption(CURLOPT_POSTFIELDS, $json_data)->post($url, true);
 
-        $response = ResponseModel::load($resp, $this->secret_key, new ViewOrderResponse);
+        $response = ResponseModel::load($resp, new ViewOrderResponse, $this->secret_key);
 
         return $response;
     }

@@ -41,7 +41,7 @@
                         <td><b>UI Message:</b></td>
                         <td><?php echo $result['response']->uiMessage; ?></td>
                     </tr>
-                    <?php if (!$result['response']->isError()): ?>
+                <?php if (!$result['response']->isError()): ?>
                     <tr>
                         <td><b>Transaction ID:</b></td>
                         <td><?php echo $result['response']->object->transactionID; ?></td>
@@ -49,21 +49,12 @@
                     <tr>
                         <td><b>Redirect URL:</b></td>
                         <td><a target="_blank" href="<?= $result['response']->object->redirectURL; ?>"><?= $result['response']->object->redirectURL; ?></a></td>
+                        <tr>
+                            <td><b>Checksum:</b></td>
+                            <td><?php echo $result['response']->object->checksum; ?></td>
+                        </tr>
                     </tr>
-                    <?php elseif (!empty($result['response']->object)): ?>
-                    <tr>
-                        <td><b>Data:</b></td>
-                        <td>
-                            <pre>
-                            <?php print_r($result['response']->object);?>
-                            </pre>
-                        </td>
-                    </tr>
-                    <?php endif;?>
-                    <tr>
-                        <td><b>Checksum:</b></td>
-                        <td><?php echo $result['response']->checksum; ?></td>
-                    </tr>
+                <?php endif; ?>
                 </table>
             </div>
         </div>

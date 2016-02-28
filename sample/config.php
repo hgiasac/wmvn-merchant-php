@@ -6,6 +6,7 @@ function globalConfig() {
             'passcode' => 'M_HASH',
             'secret_key' => 'test@webmoney',
             'production_mode' => false, // true if in production mode
+            'is_local_test' => true,
         ),
         'order'  => array(
             'mTransactionID'    => '2345234234234',

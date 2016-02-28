@@ -14,7 +14,7 @@ use WMMerchant\base\RequestModel;
  */
 class CreateOrderRequest extends RequestModel {
 	/**
-	 * Transaction ID
+	 * Merchant Transaction ID
 	 *
 	 * @var string
 	 */

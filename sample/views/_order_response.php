@@ -16,30 +16,22 @@
                         <td><?php echo $result['response']->uiMessage; ?></td>
                     </tr>
                 <?php if (!$result['response']->isError()): ?>
-                    <?php
-                        $attributes = $result['response']->object->getAttributes();
-                        $labels = $result['response']->object->attributeLabels();
-                        foreach ($attributes as $key => $value):
-                    ?>
+                <?php
+                    $attributes = $result['response']->object->getAttributes();
+                    $labels = $result['response']->object->attributeLabels();
+                    foreach ($attributes as $key => $value):
+                ?>
                     <tr>
                         <td><b><?= $labels[$key]; ?></b></td>
                         <td><?= $value ?></td>
                     </tr>
                     <?php endforeach;?>
-                <?php elseif (!empty($result['response']->object)): ?>
-                    <tr>
-                        <td><b>Data:</b></td>
-                        <td>
-                            <pre>
-                            <?php print_r($result['response']->object);?>
-                            </pre>
-                        </td>
-                    </tr>
-                <?php endif;?>
                     <tr>
                         <td><b>Checksum:</b></td>
-                        <td><?php echo $result['response']->checksum; ?></td>
+                        <td><?php echo $result['response']->object->checksum; ?></td>
                     </tr>
+                <?php endif;?>
+
                 </table>
             </div>
         </div>
