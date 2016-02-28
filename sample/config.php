@@ -5,7 +5,7 @@ define('BASE_DIR', __DIR__);
 function globalConfig() {
     return array(
         'wm_merchant' => array(
-            'passcode' => 'YOUR passcode',
+            'passcode' => 'YOUR PASSCODE',
             'secret_key' => 'YOUR SECRET KEY',
             'production_mode' => false, // true if in production mode
             'is_local_test' => false,
