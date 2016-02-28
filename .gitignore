@@ -35,7 +35,5 @@ phpunit.phar
 # upload dir
 /static/upload/
 
-config.php
-
 .sublime-project
 .sublime-workspace
