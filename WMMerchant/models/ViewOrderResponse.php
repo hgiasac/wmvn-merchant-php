@@ -3,16 +3,16 @@
  * @Author: toan.nguyen
  * @Date:   2016-02-21 14:42:57
  * @Last Modified by:   hgiasac
- * @Last Modified time: 2016-02-27 01:54:55
+ * @Last Modified time: 2016-02-29 08:06:04
  */
 namespace WMMerchant\models;
 
-use WMMerchant\base\RequestModel;
+use WMMerchant\base\Model;
 
 /**
  * Class contain data for sending POST request to webmoney server
  */
-class ViewOrderResponse extends RequestModel {
+class ViewOrderResponse extends Model {
 	/**
      * Transaction ID
      *
@@ -119,14 +119,4 @@ class ViewOrderResponse extends RequestModel {
             'status'    		=> $this->status,
 		);
 	}
-
-
-	/**
-     * Returns hash attributes
-     *
-     * @return array Properties that need to be hashed
-     */
-    public function hashAttributes() {
-        return ['transactionID', 'invoiceID', 'totalAmount', 'custName', 'custAddress', 'custGender', 'custEmail', 'custPhone', 'description', 'status'];
-    }
 }

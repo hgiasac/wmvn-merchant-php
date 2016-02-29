@@ -3,18 +3,18 @@
  * @Author: toan.nguyen
  * @Date:   2016-02-21 14:42:57
  * @Last Modified by:   hgiasac
- * @Last Modified time: 2016-02-27 00:11:14
+ * @Last Modified time: 2016-02-29 08:05:49
  */
 
 namespace WMMerchant\models;
 
-use WMMerchant\base\RequestModel;
+use WMMerchant\base\Model;
 
 /**
  * Create Order response class
  * Retrieves data if the request is successful
  */
-class CreateOrderResponse extends RequestModel {
+class CreateOrderResponse extends Model {
 
     /**
      * Transaction ID
@@ -50,15 +50,5 @@ class CreateOrderResponse extends RequestModel {
             'transactionID'       => $this->transactionID,
             'redirectURL'       => $this->redirectURL,
         );
-    }
-
-
-    /**
-     * Return attribute names that will be used for encrypting checksum
-     *
-     * @return array
-     */
-    public function hashAttributes() {
-        return array('transactionID', 'redirectURL');
     }
 }

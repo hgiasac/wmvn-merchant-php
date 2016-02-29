@@ -3,7 +3,7 @@
  * @Author: toan.nguyen
  * @Date:   2016-02-21 14:42:57
  * @Last Modified by:   hgiasac
- * @Last Modified time: 2016-02-28 09:41:03
+ * @Last Modified time: 2016-02-29 08:11:39
  */
 
 namespace WMMerchant\base;
@@ -18,13 +18,30 @@ use WMMerchant\base\Model;
 class RequestModel extends Model {
 
     /**
+     * Checksum string for security check
+     *
+     * @var string
+     */
+    public $checksum;
+
+    /**
+     * Return attribute names that will be used for encrypting checksum
+     *
+     * @return array
+     */
+    public function hashAttributes() {
+        throw new Exception("hashAttributes method is not implemented");
+    }
+
+    /**
      * Hash checksum data with sha1 algorithm
      *
      * @param  $secret Secret key for encryption
      *
      */
-    public function hashChecksum($passcode, $secret) {
-        $this->checksum = Security::hashChecksumModel($this, $secret, $passcode);
+    public function hashChecksum($service) {
+        $text = Security::joinHashText($this) . $service->merchant_code . $service->passcode;
+        $this->checksum = Security::hashChecksum($text, $service->secret_key);
     }
 
 }

@@ -55,30 +55,14 @@ class ResponseModel {
     }
 
     /**
-     * Validate checksum of response model
-     *
-     * @param  string $secret Secret key
-     *
-     * @return boolean
-     */
-    public function validateChecksum($secret) {
-        if ($this->isError() || empty($this->object)) {
-            return true;
-        }
-
-        return Security::validateChecksumModel($this->object->checksum, $this->object, $secret);
-    }
-
-    /**
      * Load response array data into model
      *
      * @param  string $responseText Response text
      * @param  WMMerchant\base\Model $model Object model
-     * @param  string $secret Secret key
      *
      * @return  ResponseModel Response data
      */
-    public static function load($response_text, $model, $secret) {
+    public static function load($response_text, $model) {
 
         $response = json_decode($response_text, true);
         if ($response == null) {
@@ -103,25 +87,10 @@ class ResponseModel {
             if (!empty($response['object'])) {
 
                 if (empty($model)) {
-                    throw new Exception("Model object must be set for loading data and validation");
-                }
-
-                $checksumFailedMessage = 'Invalid checksum. The response data is not requested from reliable source URL';
-                if (empty($response['object']['checksum'])) {
-                    return self::responseError(self::PARTNER_VALIDATION_FAILED, $checksumFailedMessage);
+                    throw new \Exception("Model object must be set for loading data and validation");
                 }
                 $model->setAttributes($response['object']);
-                $model->checksum = $response['object']['checksum'];
                 $resp->object = $model;
-
-                try {
-                    if (!$resp->validateChecksum($secret)) {
-                        return self::responseError(self::PARTNER_VALIDATION_FAILED, $checksumFailedMessage);
-                    }
-                } catch (\Exception $e) {
-                    var_dump($response);
-                    die;
-                }
             }
         }
         return $resp;

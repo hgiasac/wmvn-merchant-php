@@ -42,6 +42,14 @@ class WMService {
     public $is_local_test;
 
     /**
+     * Merchant code
+     * Provided by Webmoney system
+     *
+     * @var string
+     */
+    public $merchant_code;
+
+    /**
      * Merchant passcode
      * Provided by Webmoney system
      *
@@ -67,7 +75,9 @@ class WMService {
         if (empty($settings)) {
             throw new \Exception("Empty webmoney merchant settings data");
         }
-
+        if (empty($settings['merchant_code'])) {
+            throw new \Exception("merchant_code of WMService is empty");
+        }
         if (empty($settings['passcode'])) {
             throw new \Exception("Passcode of WMService is empty");
         }
@@ -77,6 +87,7 @@ class WMService {
         }
 
         $this->passcode = $settings['passcode'];
+        $this->merchant_code = $settings['merchant_code'];
         $this->secret_key = $settings['secret_key'];
         $this->production_mode = !empty($settings['production_mode']);
         $this->is_local_test = !empty($settings['is_local_test']);
@@ -108,6 +119,9 @@ class WMService {
     protected function validateCodes() {
         if (empty($this->passcode)) {
             throw new \Exception("Passcode has not been set.");
+        }
+        if (empty($this->merchant_code)) {
+            throw new \Exception("merchant_code has not been set.");
         }
 
         if (empty($this->secret_key)) {
@@ -171,7 +185,8 @@ class WMService {
         if (empty($_GET['checksum'])) {
             return 'Empty checksum';
         }
-        $hash = Security::hashChecksum($_GET['transaction_id'] . $status, $this->secret_key);
+        $text = $_GET['transaction_id'] . $status . $this->merchant_code . $this->passcode;
+        $hash = Security::hashChecksum($text, $this->secret_key);
         if ($hash !== $_GET['checksum']) {
             return 'Invalid checksum.';
         }
@@ -222,11 +237,11 @@ class WMService {
         $curl = $this->getCurl();
         $request->clientIP = NetHelper::getIPAddress();
         $request->userAgent = $_SERVER['HTTP_USER_AGENT'];
-        $request->hashChecksum($this->passcode, $this->secret_key);
+        $request->hashChecksum($this);
         $json_data = json_encode($request);
         $resp = $curl->setOption(CURLOPT_POSTFIELDS, $json_data)->post($url, true);
 
-        $response = ResponseModel::load($resp, new CreateOrderResponse, $this->secret_key);
+        $response = ResponseModel::load($resp, new CreateOrderResponse);
 
         return $response;
     }
@@ -244,11 +259,11 @@ class WMService {
         $this->validateCodes();
 
         $curl = $this->getCurl();
-        $request->hashChecksum($this->passcode, $this->secret_key);
+        $request->hashChecksum($this);
         $json_data = json_encode($request);
         $resp = $curl->setOption(CURLOPT_POSTFIELDS, $json_data)->post($url, true);
 
-        $response = ResponseModel::load($resp, new ViewOrderResponse, $this->secret_key);
+        $response = ResponseModel::load($resp, new ViewOrderResponse);
 
         return $response;
     }

@@ -26,10 +26,6 @@
                         <td><?= $value ?></td>
                     </tr>
                     <?php endforeach;?>
-                    <tr>
-                        <td><b>Checksum:</b></td>
-                        <td><?php echo $result['response']->object->checksum; ?></td>
-                    </tr>
                 <?php endif;?>
 
                 </table>

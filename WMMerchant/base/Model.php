@@ -3,7 +3,7 @@
  * @Author: toan.nguyen
  * @Date:   2016-02-21 14:42:57
  * @Last Modified by:   hgiasac
- * @Last Modified time: 2016-02-25 15:06:59
+ * @Last Modified time: 2016-02-29 08:05:21
  */
 
 namespace WMMerchant\base;
@@ -14,13 +14,6 @@ namespace WMMerchant\base;
  *
  */
 class Model {
-
-    /**
-     * Checksum string for security check
-     *
-     * @var string
-     */
-    public $checksum;
 
     /**
      * Set attribute value into model
@@ -56,14 +49,5 @@ class Model {
      */
     public function getAttributes() {
         throw new Exception("getAttributes method is not implemented");
-    }
-
-    /**
-     * Return attribute names that will be used for encrypting checksum
-     *
-     * @return array
-     */
-    public function hashAttributes() {
-        throw new Exception("hashAttributes method is not implemented");
     }
 }
