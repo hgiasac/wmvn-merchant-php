@@ -13,7 +13,7 @@ use WMMerchant\models\ViewOrderResponse;
  */
 class WMService {
 
-    const WMMERCHANT_HOST = 'http://apimerchant.webmoney.com.vn/';
+    const WMMERCHANT_HOST = 'https://apimerchant.webmoney.com.vn/';
     const WMMERCHANT_HOST_TEST = 'http://apimerchant.webmoney.prj/';
 
     const PRODUCTION_PATH = 'payment';
@@ -109,6 +109,8 @@ class WMService {
         ));
         $curl->setOption(CURLOPT_TIMEOUT, 200);
         $curl->setOption(CURLOPT_CONNECTTIMEOUT, 200);
+        // temporarily disables SSL verifying
+        $curl->setOption(CURLOPT_SSL_VERIFYPEER, false);
         return $curl;
     }
 

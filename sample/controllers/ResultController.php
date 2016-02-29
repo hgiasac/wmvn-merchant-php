@@ -3,7 +3,7 @@
  * @Author: tongeek
  * @Date:   2016-02-21 15:15:38
  * @Last Modified by:   hgiasac
- * @Last Modified time: 2016-02-28 21:44:42
+ * @Last Modified time: 2016-02-29 16:48:40
  */
 
 namespace sample\controllers;
@@ -22,7 +22,6 @@ class ResultController extends Controller {
 
     protected function applyResult($type, $code) {
         $result = array();
-        $service = new WMService($this->config['wm_merchant']);
         $valid = $service->validateResultURL($code);
         if ($valid !== true) {
             $result['error_message'] = $valid;

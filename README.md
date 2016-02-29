@@ -17,7 +17,7 @@ Tải về và đặt trong thư mục chính của project (hoặc thư mục m
 Sample code
 ---------------
 
-Thư viện yêu cầu passcode và secret_key, do Webmoney cung cấp, nhập vào hàm globalConfig trong file sample/config.php
+Thư viện yêu cầu passcode, merchant_code và secret_key, do Webmoney cung cấp, nhập vào hàm globalConfig trong file sample/config.php
 
 ```php
 function globalConfig() {
@@ -25,6 +25,7 @@ function globalConfig() {
         'wm_merchant' => array(
             'passcode' => 'YOUR PASSCODE',
             'secret_key' => 'YOUR SECRET KEY',
+            'merchant_code' => 'YOUR MERCHANT CODE',
             'production_mode' => false, // true if in production mode
         ),
         ...
