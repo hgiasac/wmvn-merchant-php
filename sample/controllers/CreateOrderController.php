@@ -2,14 +2,15 @@
 /**
  * @Author: tongeek
  * @Date:   2016-02-21 15:15:38
- * @Last Modified by:   hgiasac
- * @Last Modified time: 2016-02-26 16:38:08
+ * @Last Modified by:     hgiasac
+ * @Last Modified time: 2 2016-03-01 14:10:08
  */
 
 namespace sample\controllers;
 
 use sample\inc\Controller;
 use WMMerchant\WMService;
+use WMMerchant\base\NetHelper;
 use WMMerchant\models\CreateOrderRequest;
 use WMMerchant\models\CreateOrderResponse;
 
@@ -23,6 +24,9 @@ class CreateOrderController extends Controller {
         $model = new CreateOrderRequest();
         $model->setAttributes($this->config['order']);
         $model->mTransactionID = time();
+        $model->resultURL = NetHelper::getBaseURL() . '/success.php';
+        $model->cancelURL = NetHelper::getBaseURL() . '/cancel.php';
+        $model->errorURL = NetHelper::getBaseURL() . '/failed.php';
         $result['order'] = $model;
 
         return $result;
