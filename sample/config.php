@@ -5,11 +5,10 @@ define('BASE_DIR', __DIR__);
 function globalConfig() {
     return array(
         'wm_merchant' => array(
-            'passcode' => 'WM_DEMO_HASH',
-            'secret_key' => 'test@webmoney',
-            'merchant_code' => 'WM_DEMO',
+            'passcode' => 'YOUR PASSCODE',
+            'secret_key' => 'YOUR SECRET KEY',
+            'merchant_code' => 'YOUR MERCHANT CODE',
             'production_mode' => false, // true if in production mode
-            'is_local_test' => false,
         ),
 
         'order'  => array(
