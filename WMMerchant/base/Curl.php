@@ -250,7 +250,7 @@ class Curl
                     return false;
                     break;
                 default:
-                    throw new Exception('curl request failed: ' . curl_error($this->_curl) , curl_errno($this->_curl));
+                    throw new \Exception('curl request failed: ' . curl_error($this->_curl) , curl_errno($this->_curl));
                     break;
             }
         }
